@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Basic HTML Web Page</title>
+
+</head>
+
+<body>
+<h1>Welcome to My Web Page</h1>
+
+    <h2>Introduction</h2>
+<p>
+
+        This is a <b>basic HTML web page</b> created using simple HTML tags.
+
+        HTML stands for <i>HyperText Markup Language</i> and it is used to
+
+        Create web pages.
+
+    </p>
+<h3>Text Formatting Examples</h3>
+ <p>
+
+        <b>Bold text</b><br>
+
+        <i>Italic text</i><br>
+
+        <u>Underlined text</u><br>
+
+        <strong>Strong text</strong><br>
+
+        <em>Emphasized text</em>
+
+    </p>
+<h4>Conclusion</h4>
+ <p>
+
+        Learning HTML is the <mark>first step</mark> towards becoming a web
+
+        Developer. Practice regularly to improve your skills.
+
+    </p>
+</body>
+</html>
+￼Enter
