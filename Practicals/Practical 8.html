@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+
+<head>
+
+    <meta charset=”UTF-8”>
+
+    <title>CSS Selectors Masterclass</title>
+
+    <style>
+
+        /* 1. UNIVERSAL SELECTOR (*) */
+
+        /* Targets every single element on the page. Best for resets. */
+
+•	{
+
+            Margin: 0;
+
+            Padding: 0;
+
+            Box-sizing: border-box;
+
+            Font-family: ‘Arial’, sans-serif;
+
+        }
+
+        Body {
+
+            Padding: 40px;
+
+            Background-color: #f4f4f9;
+
+            Line-height: 1.6;
+
+        }
+
+        /* 2. ID SELECTOR (#id) */
+
+        /* Targets ONE unique element. High priority. */
+
+        #main-header {
+
+            Background-color: #2c3e50;
+
+            Color: white;
+
+            Padding: 20px;
+
+            Text-align: center;
+
+            Border-radius: 8px;
+
+            Margin-bottom: 30px;
+
+        }
+
+        /* 3. CLASS SELECTOR (.class) */
+
+        /* Targets multiple elements with the same class. Very reusable. */
+
+        .feature-card {
+
+            Background: white;
+
+            Border-left: 5px solid #3498db;
+
+            Padding: 20px;
+
+            Margin-bottom: 20px;
+
+            Box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        }
+
+        /* 4. DESCENDANT SELECTOR (space) */
+
+        /* Targets an element INSIDE another specific element. */
+
+        /* Here, we only target <strong> tags that are inside a .feature-card */
+
+        .feature-card strong {
+
+            Color: #e74c3c;
+
+            Background: #fff5f5;
+
+            Padding: 2px 5px;
+
+        }
+
+        /* 5. GROUPING SELECTOR (comma) */
+
+        /* Applies the same styles to multiple different selectors at once. */
+
+        H2, h3, .btn-text {
+
+            Text-transform: uppercase;
+
+            Letter-spacing: 1px;
+
+            Color: #2c3e50;
+
+        }
+
+        .btn-text {
+
+            Display: inline-block;
+
+            Margin-top: 10px;
+
+            Font-weight: bold;
+
+            Color: #3498db;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header id=”main-header”>
+
+        <h1>CSS Selector Demonstration</h1>
+
+    </header>
+
+    <div class=”feature-card”>
+
+        <h2>The Class Selector</h2>
+
+        <p>This box is styled using a class. Classes are great because you can 
+
+           <strong>reuse them</strong> as many times as you want.</p>
+
+        <span class=”btn-text”>Read More</span>
+
+    </div>
+
+    <div class=”feature-card”>
+
+        <h3>The Descendant Selector</h3>
+
+        <p>In this card, the word <strong>”highlighted”</strong> is red because it 
+
+           Is a strong tag inside a feature-card. Strong tags elsewhere won’t be red.</p>
+
+        <span class=”btn-text”>Learn More</span>
+
+    </div>
+
+</body>
+
+</html>
+
+￼Enter
