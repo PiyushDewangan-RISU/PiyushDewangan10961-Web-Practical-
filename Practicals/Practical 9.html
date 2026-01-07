@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Mobile-First Page</title>
+
+    <style>
+
+        /* 1. UNIVERSAL RESET */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+      
+        body {
+
+            font-family: sans-serif;
+
+            line-height: 1.6;
+
+            background-color: #f4f4f4;
+
+        }
+
+        /* 2. MOBILE-FIRST STYLES (Default) */
+
+        /* These styles apply to ALL devices, starting from the smallest phone */
+
+        .container {
+
+            width: 90%;          /* Flexible: uses 90% of screen width */
+
+            margin: 2rem auto;   /* Flexible: 2rem vertical spacing */
+
+        }
+
+        .header {
+
+            background-color: #333;
+
+            color: white;
+
+            padding: 10vh 5%;    /* 10% of viewport height padding */
+
+            text-align: center;
+
+            border-radius: 10px;
+
+        }
+
+        .main-content {
+
+            display: flex;
+
+            flex-direction: column; /* Stacked vertically on mobile */
+
+            gap: 1.5rem;
+
+            margin-top: 1.5rem;
+
+        }
+
+        .card {
+
+            background: white;
+
+            padding: 1.5rem;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+        }
+
+        img {
+
+            max-width: 100%;     /* Ensures images never overflow their box */
+
+            height: auto;
+
+            border-radius: 5px;
+
+        }
+
+      
+        /* 3. MEDIA QUERY (For Tablets and Desktops) */
+
+        /* "min-width: 768px" means: "If the screen is wider than 768px, do this:" */
+
+        @media (min-width: 768px) {
+
+            .main-content {
+
+                flex-direction: row; /* Change from stack to side-by-side */
+
+            }
+
+            .card {
+
+                flex: 1; /* Each card takes up equal space in the row */
+
+            }
+
+            .header {
+
+                padding: 15vh 10%; /* More breathing room on bigger screens */
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+
+            <h1>Responsive Design</h1>
+
+            <p>Resize your browser to see the magic!</p>
+
+        </header>
+
+        <section class="main-content">
+
+            <div class="card">
+
+                <h2>Flexbox Power</h2>
+
+                <p>On mobile, I am on top. On desktop, I move to the left.</p>
+
+            </div>
+
+            <div class=card">
+
+                <h2>Flexible Units</h2>
+
+                <p>I use <strong>rem</strong> and <strong>%</strong> so I look good on any screen size.</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
+
