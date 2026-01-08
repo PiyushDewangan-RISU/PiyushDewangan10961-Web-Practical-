@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Form Validation using JavaScript</title>
+
+    <script>
+
+        // oninput validation
+
+        Function validateName() {
+
+            Var name = document.getElementById(“name”).value;
+
+            If (name.length < 3) {
+
+                Document.getElementById(“nameMsg”).innerHTML =
+
+                    “Name must be at least 3 characters”;
+
+            } else {
+
+                Document.getElementById(“nameMsg”).innerHTML = “”;
+
+            }
+
+        }
+
+        // onsubmit validation
+
+        Function validateForm() {
+
+            Var name = document.getElementById(“name”).value;
+
+            Var email = document.getElementById(“email”).value;
+
+            If (name === “” || email === “”) {
+
+                Alert(“All fields are required!”);
+
+                Return false; // stop form submission
+
+            }
+
+            If (name.length < 3) {
+
+                Alert(“Name must be at least 3 characters long”);
+
+                Return false;
+
+            }
+
+            Alert(“Form submitted successfully!”);
+
+            Return true; // allow submission
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>User Registration Form</h1>
+
+    <form onsubmit=”return validateForm()”>
+
+        <p>
+
+            Name:
+
+            <input type=”text” id=”name” oninput=”validateName()”>
+
+            <span id=”nameMsg” style=”color:red;”></span>
+
+        </p>
+
+        <p>
+
+            Email:
+
+            <input type=”email” id=”email”>
+
+        </p>
+
+        <p>
+
+            <input type=”submit” value=”Submit”>
+
+            <input type=”reset” value=”Reset”>
+
+        </p>
+
+    </form>
+
+</body>
+
+</html>
