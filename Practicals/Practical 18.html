@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>DOM Element Manipulation</title>
+
+    <style>
+
+        #list {
+
+            border: 1px solid black;
+
+            width: 250px;
+
+            padding: 10px;
+
+        }
+
+    </style>
+
+    <script>
+
+        function addItem() {
+
+            // Create new element
+
+            var li = document.createElement("li");
+
+            // Add text to element
+
+            li.innerHTML = "New List Item";
+
+            // Append child to parent
+
+            document.getElementById("list").appendChild(li);
+
+        }
+
+        function modifyItem() {
+
+            var list = document.getElementById("list");
+
+            // Modify first child
+
+            if (list.firstElementChild) {
+
+                list.firstElementChild.innerHTML = "Modified Item";
+
+            }
+
+        }
+
+        function removeItem() {
+
+            var list = document.getElementById("list");
+
+            // Remove last child
+
+            if (list.lastElementChild) {
+
+                list.removeChild(list.lastElementChild);
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>JavaScript DOM Manipulation</h1>
+
+    <button onclick="addItem()">Add Item</button>
+
+    <button onclick="modifyItem()">Modify First Item</button>
+
+    <button onclick="removeItem()">Remove Last Item</button>
+
+    <ul id="list">
+
+        <li>Item 1</li>
+
+        <li>Item 2</li>
+
+    </ul>
+
+</body>
+
+</html>
