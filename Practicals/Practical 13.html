@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>JavaScript Functions and Scope</title>
+
+    <script>
+
+        // USER-DEFINED FUNCTION
+
+        function showMessage() {
+
+            document.write("This is a user-defined function.<br><br>");
+
+        }
+
+        // FUNCTION WITH PARAMETERS
+
+        function add(a, b) {
+
+            return a + b;
+
+        }
+
+        // SCOPE DEMONSTRATION
+
+        function scopeDemo() {
+
+            // var → function scope
+
+            var x = 10;
+
+            // let → block scope
+
+            let y = 20;
+
+            // const → block scope (cannot be reassigned)
+
+            const z = 30;
+
+            document.write("Inside function:<br>");
+
+            document.write("var x = " + x + "<br>");
+
+            document.write("let y = " + y + "<br>");
+
+            document.write("const z = " + z + "<br>");
+
+            if (true) {
+
+                var x = 100;      // same variable (function scope)
+
+                let y = 200;      // new variable (block scope)
+
+                const z = 300;    // new constant (block scope)
+
+                document.write("<br>Inside block:<br>");
+
+                document.write("var x = " + x + "<br>");
+
+                document.write("let y = " + y + "<br>");
+
+                document.write("const z = " + z + "<br>");
+
+            }
+
+            document.write("<br>After block:<br>");
+
+            document.write("var x = " + x + "<br>");
+
+            document.write("let y = " + y + "<br>");
+
+            document.write("const z = " + z + "<br>");
+
+        }
+
+        // INVOKING FUNCTIONS
+
+        function runProgram() {
+
+            showMessage();
+
+            var result = add(5, 3);
+
+            document.write("Addition Result: " + result + "<br><br>");
+
+
+
+            scopeDemo();
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>JavaScript Functions and Scope</h1>
+
+    <button onclick="runProgram()">Run Program</button>
+
+</body>
+
+</html>
