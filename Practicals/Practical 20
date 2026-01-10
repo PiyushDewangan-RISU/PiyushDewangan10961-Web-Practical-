@@ -1,0 +1,90 @@
+##Practical – 20
+
+Git Repository Setup and Website Deployment
+
+##Aim
+To initialize a Git repository, commit and push project files to GitHub, and deploy a personal portfolio website using GitHub Pages or Netlify.
+
+##Software / Tools Required
+
+•Git
+
+•GitHub Account
+
+•Web Browser
+
+•Code Editor (VS Code)
+
+##Theory
+
+Git is a distributed version control system used to track changes in source code.
+
+GitHub is a cloud-based platform that hosts Git repositories.
+
+GitHub Pages and Netlify are platforms used to deploy static websites online.
+
+##Procedure
+
+Step 1: Initialize Git Repository
+
+Open terminal inside the project folder and run:
+
+git init
+
+Step 2: Check Repository Status
+
+git status
+
+Step 3: Add Files to Staging Area
+
+git add .
+
+Step 4: Commit Changes
+
+git commit -m "Initial commit"
+
+Step 5: Create GitHub Repository
+
+Login to GitHub
+
+Click New Repository
+
+Enter repository name (example: portfolio-site)
+
+Click Create Repository
+
+Step 6: Connect Local Repository to GitHub
+
+git remote add origin https://github.com/username/portfolio-site.git
+
+Step 7: Push Code to GitHub
+
+git branch -M main
+
+git push -u origin main
+
+##Deployment
+
+Method 1: Deploy Using GitHub Pages
+
+Open GitHub repository
+
+Go to Settings → Pages
+
+Select branch main
+
+Click Save
+
+Website URL will be generated as:
+
+Copy code
+
+https://username.github.io/portfolio-site/
+
+##Result
+
+The Git repository was successfully initialized, committed, pushed to GitHub, and the personal portfolio website was successfully deployed online.
+
+##Conclusion
+
+This practical demonstrates the use of Git for version control and GitHub/Netlify for hosting and deploying static websites efficiently.
