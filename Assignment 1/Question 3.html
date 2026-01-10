@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        form {
+            width: 400px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+        }
+        .gender input {
+            width: auto;
+            margin-right: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <h2>User Details</h2>
+
+    <!-- Name -->
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <!-- Email -->
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Gender -->
+    <label>Gender:</label>
+    <div class="gender">
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+    </div>
+
+    <!-- Favorite Subject -->
+    <label>Favorite Subject:</label>
+    <select name="subject">
+        <option value="">-- Select Subject --</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>C Programming</option>
+        <option>Python</option>
+    </select>
+
+    <!-- Comments -->
+    <label>Comments:</label>
+    <textarea rows="4" placeholder="Write your comments here"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+  </html>
